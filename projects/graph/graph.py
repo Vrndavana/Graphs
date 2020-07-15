@@ -5,6 +5,7 @@ from util import Stack, Queue  # These may come in handy
 class Graph:
     """Represent a graph as a dictionary of vertices mapping labels to edges."""
     def __init__(self):
+        # First state "var" to have the properties to effect 
         self.vertices = {}
     def add_vertex(self, vertex_id):
         """
@@ -40,6 +41,8 @@ class Graph:
         # pass  # TODO
         # set up queue
         q = Queue()
+        # Traver from node to node " Linked list { whiles current } <- trav"
+        # Graphs Trav = Html Href 
         traversed = []
         q.enqueue(starting_vertex)
         # while the queue still has values in it
